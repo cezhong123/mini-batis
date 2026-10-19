@@ -7,16 +7,16 @@ import java.time.LocalDateTime;
 public class User {
     int id;
     String name, phone;
-    LocalDateTime created_at;
+    LocalDateTime createdAt;
 
     public User() {
     }
 
-    public User(int id, String name, String phone, LocalDateTime created_at) {
+    public User(int id, String name, String phone, LocalDateTime createdAt) {
         this.id = id;
         this.name = name;
         this.phone = phone;
-        this.created_at = created_at;
+        this.createdAt = createdAt;
     }
 
     public void setId(int id) {
@@ -31,12 +31,12 @@ public class User {
         this.phone = phone;
     }
 
-    public void setCreated_at(LocalDateTime created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
     @Override
     public String toString() {
-        return "User[" + id +" "+ name +" "+ phone +" "+ created_at + "]";
+        return "User[" + id +" "+ name +" "+ phone +" "+ createdAt + "]";
     }
 }
