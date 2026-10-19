@@ -1,6 +1,9 @@
 package com.shop;
 
 import java.time.LocalDateTime;
+//定义user类
+//写普通类而不是record
+//如果写record的话，之后通过反射获取对象时会遇到没有无参构造可调的问题
 public class User {
     int id;
     String name, phone;

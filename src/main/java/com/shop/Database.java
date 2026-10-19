@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+//链接数据库的地方，读配置里的信息，生成链接
 public final class Database {
     private final String url;
     private final Properties props;
